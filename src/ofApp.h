@@ -29,6 +29,16 @@ public:
     
     ofxOscSender sender;
     string input;
+    
+    bool bBarOn;
+    bool bControlingBar;
+    
+    ofRectangle bar;
+    ofRectangle currentBar;
+    
+    int totalBalloon;
+    int output;
+    int prevOutput;
 
 };
 

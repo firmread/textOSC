@@ -68,4 +68,13 @@ textInput * txtIn;
     return YES;
 }
 
+
+//UITextField char limit
+//from http://stackoverflow.com/questions/433337/set-the-maximum-character-length-of-a-uitextfield
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    NSUInteger newLength = [textField.text length] + [string length] - range.length;
+    return (newLength > 50) ? NO : YES;
+}
+
 @end
