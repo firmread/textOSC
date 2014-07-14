@@ -24,15 +24,30 @@ textInput * txtIn;
 }
 - (IBAction)textInput:(id)sender {
     UITextField * input = sender;
+//    input.placeholder = 
     app->input = ([input.text cStringUsingEncoding:NSUTF8StringEncoding]);
     
     cout << app->input << endl;
+    
+    int pickone = ofRandom(0, 4);
+    input.placeholder = [NSString stringWithCString:app->placeholder[pickone].c_str()                                    encoding:[NSString defaultCStringEncoding]];
     
     ofxOscMessage m;
     m.setAddress("/inText");
     m.addStringArg(app->input);
 //    m.addFloatArg(ofGetElapsedTimef());
+    m.setAddress("/balloonOut");
+    m.addIntArg(app->output);
+    m.setAddress("/colorpick/r");
+    m.addIntArg(app->cPick.r);
+    m.setAddress("/colorpick/g");
+    m.addIntArg(app->cPick.g);
+    m.setAddress("/colorpick/b");
+    m.addIntArg(app->cPick.b);
     app->sender.sendMessage(m);
+    app->feedbackFlash = app->cPick;
+    
+    
 }
 
 

@@ -4,8 +4,10 @@
 #include "ofxiOS.h"
 #include "ofxiOSExtras.h"
 #include "ofxOsc.h"
+#include "ofxCenteredTrueTypeFont.h"
 
-#define HOST "192.168.88.114"
+#define HOST "localhost"
+//beware app wont complie+run if no wifi connected! < switch back to localhost
 #define PORT 12345
 
 class ofApp : public ofxiOSApp {
@@ -27,9 +29,16 @@ public:
     void gotMemoryWarning();
     void deviceOrientationChanged(int newOrientation);
     
+    void grabColor();
+    void colorWheelClickCheck();
+    
+    //text sender
     ofxOscSender sender;
     string input;
+    ofColor feedbackFlash;
     
+    
+    //balloon selector bar
     bool bBarOn;
     bool bControlingBar;
     
@@ -39,7 +48,42 @@ public:
     int totalBalloon;
     int output;
     int prevOutput;
-
+    
+    int holdDelay;
+    
+    ofRectangle activatePanelRect;
+    bool bCallingPanel;
+    
+    //color picker
+    ofImage wheel;
+    ofColor cPick;
+    ofColor prevCPick;
+    bool bPickingColor;
+    bool bIxFadeToneTrigger;
+    float ixFadeTone;
+    
+    ofPoint posWheelCenter;
+    ofPoint currentTouch;
+    ofPoint currentColorPickBoundedTouch;
+    ofPoint posOnPixel;
+    
+    float distFromWheelCenter;
+    
+    
+    
+    ofImage bg;
+    ofImage head;
+    float bgRatio;
+    ofxCenteredTrueTypeFont headFont;
+    
+    
+    string placeholder[5] = {
+        "tell me your secret",
+        "what is your greatest struggle",
+        "say something to someone far away",
+        "give an advice to a large group of people",
+        "tell me the name of person you love the most"
+    };
 };
 
 

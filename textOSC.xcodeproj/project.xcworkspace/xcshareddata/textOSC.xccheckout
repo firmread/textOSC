@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DD3D8933-921B-4F63-8366-7BE82214E5CF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>textOSC</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>06765D23-F326-4597-8E28-A4FFA032AF23</key>
+		<string>https://github.com/armadillu/ofxCenteredTrueTypeFont.git</string>
+		<key>67F70D55-0DF7-4415-8D8F-4718C4DF7D2E</key>
+		<string>https://github.com/firmread/textOSC.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>textOSC.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>06765D23-F326-4597-8E28-A4FFA032AF23</key>
+		<string>../../../../../addons/ofxCenteredTrueTypeFont</string>
+		<key>67F70D55-0DF7-4415-8D8F-4718C4DF7D2E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/firmread/textOSC.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>67F70D55-0DF7-4415-8D8F-4718C4DF7D2E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>06765D23-F326-4597-8E28-A4FFA032AF23</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxCenteredTrueTypeFont</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>67F70D55-0DF7-4415-8D8F-4718C4DF7D2E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>textOSC</string>
+		</dict>
+	</array>
+</dict>
+</plist>
